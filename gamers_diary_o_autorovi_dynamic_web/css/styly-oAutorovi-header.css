@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/************Reusable*************/
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.row2 {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.text-imp {
+    color: #eb72d7;
+}
+
+/************Hlavička*************/
+header {
+    background: rgb(29, 28, 28);
+    height: 80px;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+/************Navigace*************/
+nav {
+    background: rgb(29, 28, 28);
+    display: flex;
+}
+
+nav ul {
+    max-width: 1000px;
+    margin-top: 32px;
+    margin-left: 160px;
+}
+
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    width: 150px;
+    text-align: center;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-family: sans-serif;
+    font-size: 17px;
+    text-transform: uppercase;
+    position: relative;
+    font-weight: bold;
+}
+
+/*********Efekt po najetí na položky navigace*************/
+nav ul li a:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 3px;
+    bottom: -3px;
+    left: 0;
+    background-color: white;
+    transform-origin: bottom right;
+    transition: transform 0.4s ease-out;
+}
+
+nav ul li a:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+/**************Mobilní navigace*****************/
+.mobile-nav-icon {
+    margin-top: 23px;
+    margin-right: 30px;
+    display: none;
+}
+
+.mobile-nav-icon:hover {
+    cursor: pointer;
+}
+
+/************Krátké info o autorovi*************/
+.author-info {
+    margin-top: 12px;
+    color: #fff;
+    font-family: sans-serif;
+}
+
+.author-info h1 {
+    margin-left: 30px;
+    font-size: 30px;
+}
+
+/***************Vypnutí floatování******************/
+.clearfix {zoom: 1}
+.clearfix:after {
+    content: ".";
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+/*Vypnutí floatování*/
+.clearfix {zoom: 1}
+.clearfix:after {
+    content: ".";
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}

@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/************Reusable*************/
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.row2 {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.text-imp {
+    color: #eb72d7;
+}
+
+/*******Patička*************/
+footer {
+    padding-top: 25px;
+    padding-bottom: 10px;
+    background: rgb(29, 28, 28);
+}
+
+.follow-social-nets {
+    font-family: sans-serif;
+    font-size: 17px;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.footer-copyright {
+    color: white;
+    text-align: center;
+    padding-bottom: 10px;
+    padding-top: 20px;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+footer img {
+    width: 65px;
+    margin-right: 10px;
+    float: left;
+}
+
+.social-nets p {
+    padding-top: 23px;
+}
+
+.social-nets p a:link,
+.social-nets p a:visited {
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 20px;
+    color: white;
+}
+
+.social-nets p a:hover,
+.social-nets p a:active {
+    border-bottom: 2px solid white;
+}
+
+.social-nets {
+    width: 200px;
+    float: left;
+}
+
+.group {
+    width: 660px;
+    margin: 0 auto;
+    padding-top: 20px;
+    padding-left: 50px;
+}
+
+/*Vypnutí floatování*/
+.clearfix {zoom: 1}
+.clearfix:after {
+    content: ".";
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}

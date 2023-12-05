@@ -1,0 +1,181 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/************Reusable*************/
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.row2 {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.text-imp {
+    color: #eb72d7;
+}
+
+/********Pozadí celému body************/
+body {
+    background: #27272c;
+}
+
+/**************Hlavní sekce - main******************/
+main {
+   padding-top: 50px;
+}
+
+main img {
+    width: 100%;
+    margin-top: -18px;
+}
+
+/******Text vpravo a fotka vlevo*********/
+.text-right img {
+    width: 25%;
+    float: left;
+    margin-right: 30px;
+    border-radius: 3px;
+    filter: grayscale(50%);
+    margin-top: 0;
+}
+
+.text-right h2 {
+    color: #00bbcb;
+    font-family: sans-serif;
+    font-weight: 700;
+    font-size: 50px;
+    margin-top: 50px;
+    text-align: left;
+}
+
+.text-right p {
+    color: white;
+    text-align: justify;
+    font-family: Calibri;
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+/******Text vlevo a fotka vpravo*********/
+.text-left img {
+    width: 25%;
+    margin-left: 30px;
+    border-radius: 3px;
+    filter: grayscale(50%);
+    float: right;
+    margin-top: 0;
+}
+
+.text-left h2 {
+    color: #00bbcb;
+    font-family: sans-serif;
+    font-weight: 700;
+    font-size: 50px;
+    margin-top: 50px;
+    text-align: left;
+}
+
+.text-left p {
+    color: white;
+    text-align: justify;
+    font-family: Calibri;
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+main h1 {
+    font-family: sans-serif;
+    font-size: 50px;
+    text-align: center;
+    padding: 50px 0 60px 0;
+    color: #14f5e2; /*#00abf0*/    
+}
+
+.author-full-screen {
+    filter: grayscale(70%);
+}
+
+/********Formulář***********/
+#contact-form {
+    /*float: left;*/
+    /*margin-left: 150px;*/
+    max-width: 500px;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#contact-form input {
+    width: 100%;
+    height: 40px;
+    margin-top: 5px;
+    font-size: 15px;
+    padding-left: 5px;
+}
+
+#contact-form textarea {
+    width: 100%;
+    margin-top: 5px;
+    padding-left: 5px;
+    font-family: Calibri;
+    font-size: 17px;
+}
+
+textarea::placeholder {
+    font-family: Calibri;
+    font-size: 17px;
+}
+
+/*********Odesílací tlačítko**************/
+input[type="submit"] {
+    margin-bottom: 50px;
+    font-size: 13.5px;
+    font-weight: bold; 
+    background: rgb(216, 208, 208);
+    border-radius: 5px;
+}
+
+input[type="submit"]:hover {
+    cursor: pointer;
+    box-shadow: inset 0 0 6px #000;
+    transition: box-shadow 0.5s;
+}
+
+/***********Mapa*************/
+#map {
+    margin-top: 5px;
+    margin-right: 150px;
+    filter: grayscale(50%);
+    width: 400px;
+    height: 290px;
+    float: right;
+    border-radius: 1px;
+}
+
+.contact-data {
+    color: white;
+    font-family: sans-serif;
+    float: left;
+    margin-top: 13px;
+    margin-left: 40px;
+    font-size: 18px;
+}
+
+.contact-data p {
+    margin-top: 5px;
+}
+
+/*Vypnutí floatování*/
+.clearfix {zoom: 1}
+.clearfix:after {
+    content: ".";
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
